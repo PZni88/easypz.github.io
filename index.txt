@@ -2,23 +2,23 @@ vCard - Personal Portfolio
 
 # sidebar
 
-alt = Richard hanrick
-Richard hanrick
-Web developer
+alt = PZ Zhang
+PZ Zhang
+Software developer
 
 Show Contacts
 
 Email
-richard@example.com
+easypz@berkeley.edu
 
 Phone
-+1 (213) 352-2795
++1 (510) 415-2257
 
 Birthday
-June 23, 1982
+Dec 26, 1999
 
 Location
-Sacramento, California, USA
+Berkeley, California, USA
 
 # navbar
 
