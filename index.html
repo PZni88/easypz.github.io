@@ -1163,10 +1163,25 @@
 
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+            <button class="form-btn" type="submit" onclick="sendEmail()" disabled data-form-btn >
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
+
+            <script>
+            function sendEmail() {
+            	Email.send({
+                SecureToken : "<your generated token>",
+                To : 'recipient@example.com',
+                From : "sender@example.com",
+                Subject : "Test Email",
+                Body : "<html><h2>Header</h2><strong>Bold text</strong><br></br><em>Italic</em></html>"
+                }).then(
+                    message => alert("mail sent successfully")
+                );
+            }
+            </script>
 
           </form>
 
